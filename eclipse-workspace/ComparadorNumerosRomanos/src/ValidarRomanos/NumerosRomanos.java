@@ -89,6 +89,17 @@ public class NumerosRomanos {
                 if (!esValido) {
                     return false;
                 }
+
+                if (i > 0 && valorLetra(romano.charAt(i - 1)) <= valorActual) {
+                    return false;
+                }
+
+                if (i + 2 < romano.length()) {
+                    int valorDespues = valorLetra(romano.charAt(i + 2));
+                    if (valorDespues >= valorActual) {
+                        return false;
+                    }
+                }
             }
         }
 

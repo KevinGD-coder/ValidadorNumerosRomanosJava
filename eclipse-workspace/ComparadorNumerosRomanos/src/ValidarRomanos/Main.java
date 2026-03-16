@@ -10,7 +10,6 @@ public class Main {
         System.out.println("=== Comparador de Numeros Romanos ===");
         System.out.print("Introduce el primer numero romano: ");
         String numero1 = scanner.nextLine().toUpperCase();
-
         System.out.print("Introduce el segundo numero romano: ");
         String numero2 = scanner.nextLine().toUpperCase();
 
